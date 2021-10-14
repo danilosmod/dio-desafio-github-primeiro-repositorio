@@ -1,0 +1,9 @@
+Comando úteis Git:
+
+git init: inícia um repositório git
+
+git commit: cria um novo commit
+
+mkdir: cria um novo repositório
+
+git status: monitora o estado dos arquivos do repositótio
