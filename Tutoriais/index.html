@@ -20,15 +20,15 @@
             sobre a autenticação com GitHub CLI, consulte <a href="https://cli.github.com/manual/gh_auth_login" target="_blank">gh auth login.</a></p>
         <p>Os tokens de acesso pessoais (PATs) são uma alternativa ao uso de senhas para autenticação no GitHub ao usar a <a href="https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens" target="_blank">API</a> do <a href="https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens" target="_blank">GitHub</a> ou a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line" target="_blank">linha de comando</a> .</p>
         <p>Se quiser usar uma PAT para acessar recursos de propriedade de uma organização que usa SAML SSO, você deve
-            autorizar a PAT. Para obter mais informações, consulte " Sobre a autenticação com logon único SAML " e "
-            Autorizando um token de acesso pessoal para uso com logon único SAML ".</p>
+            autorizar a PAT. Para obter mais informações, consulte " <a href="https://docs.github.com/en/github/authenticating-to-github/about-authentication-with-saml-single-sign-on">Sobre a autenticação com logon único SAML</a> " e "
+            <a href="https://docs.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on">Autorizando um token de acesso pessoal para uso com logon único SAML</a> ".</p>
         <p>Como medida de segurança, o GitHub remove automaticamente tokens de acesso pessoais que não são usados ​​há
             um
             ano. Para fornecer segurança adicional, é altamente recomendável adicionar uma expiração aos seus tokens de
             acesso pessoais.</p>
         <p>Um token sem escopos atribuídos só pode acessar informações públicas. Para usar seu token para acessar
-            repositórios na linha de comando, selecione repo. Para obter mais informações, consulte “ Escopos
-            disponíveis ”.
+            repositórios na linha de comando, selecione repo. Para obter mais informações, consulte “ <a href="https://docs.github.com/en/apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes">Escopos
+            disponíveis</a> ”.
         </p>
     </div>
 
@@ -36,29 +36,29 @@
         <h2>Criação de um token</h2>
         <hr>
         <ol>
-            <li>Verifique seu endereço de e-mail , caso ainda não tenha sido verificado.</li>
-            <li>No canto superior direito de qualquer página, clique na foto do seu perfil e em Configurações .</li>
+            <li><a href="https://docs.github.com/en/github/getting-started-with-github/verifying-your-email-address">Verifique seu endereço de e-mail</a> , caso ainda não tenha sido verificado.</li>
+            <li>No canto superior direito de qualquer página, clique na foto do seu perfil e em <strong>Configurações</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/userbar-account-settings.png" /></p>
-            <li>Na barra lateral esquerda, clique em Configurações do desenvolvedor .</li>
+            <li>Na barra lateral esquerda, clique em <strong>Configurações do desenvolvedor</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/developer-settings.png" /></p>
-            <li>Na barra lateral esquerda, clique em Tokens de acesso pessoais .</li>
+            <li>Na barra lateral esquerda, clique em <strong>Tokens de acesso pessoais</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/personal_access_tokens_tab.png" /></p>
-            <li>Clique em Gerar novo token .</li>
+            <li>Clique em <strong>Gerar novo token</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/generate_new_token.png" /></p>
             <li>Dê ao seu token um nome descritivo.</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/token_description.png" /></p>
-            <li>Para dar ao seu token uma expiração, selecione o menu suspenso Expiração e clique em um padrão ou use o
+            <li>Para dar ao seu token uma expiração, selecione o menu suspenso <strong>Expiração</strong> e clique em um padrão ou use o
                 seletor de calendário.</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/token_expiration.png" /></p>
             <li>Selecione os escopos ou permissões que deseja conceder a este token. Para usar seu token para acessar
-                repositórios na linha de comando, selecione repo .</li>
+                repositórios na linha de comando, selecione <strong>repo</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/token_scopes.gif" /></p>
-            <li>Clique em Gerar token .</li>
+            <li>Clique em <strong>Gerar token</strong> .</li>
             <p><img src="https://docs.github.com/assets/images/help/settings/generate_token.png" /></p>
             <p><img src="https://docs.github.com/assets/images/help/settings/personal_access_tokens.png" /></p>
-            <li>Para usar seu token para autenticação em uma organização que usa SAML SSO, autorize o token para uso com
+            <li>Para usar seu token para autenticação em uma organização que usa SAML SSO, <a href="https://docs.github.com/en/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on">autorize o token para uso com
                 uma
-                organização de logon único SAML .</li>
+                organização de logon único SAML</a> .</li>
         </ol>
     </div>
 
@@ -74,21 +74,21 @@
         </div>
 
         <p>Os tokens de acesso pessoal só podem ser usados ​​para operações HTTPS Git. Se o seu repositório usa um URL
-            remoto SSH, você precisará mudar o remoto de SSH para HTTPS .</p>
+            remoto SSH, você precisará <a href="https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories/#switching-remote-urls-from-ssh-to-https">mudar o remoto de SSH para HTTPS</a> .</p>
         <p>Se não for solicitado seu nome de usuário e senha, suas credenciais podem ser armazenadas em cache no
-            computador. Você pode atualizar suas credenciais no Keychain para substituir sua senha antiga pelo token.
+            computador. Você pode <a href="https://docs.github.com/en/github/getting-started-with-github/updating-credentials-from-the-macos-keychain">atualizar suas credenciais no Keychain</a> para substituir sua senha antiga pelo token.
         </p>
         <p>Em vez de inserir manualmente seu PAT para cada operação HTTPS Git, você pode armazenar em cache seu PAT com
             um cliente Git. Git irá armazenar temporariamente suas credenciais na memória até que um intervalo de
             expiração tenha passado. Você também pode armazenar o token em um arquivo de texto simples que o Git pode
-            ler antes de cada solicitação. Para obter mais informações, consulte " Armazenando em cache suas credenciais
-            do GitHub no Git ."</p>
+            ler antes de cada solicitação. Para obter mais informações, consulte " <a href="https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git">Armazenando em cache suas credenciais
+            do GitHub no Git</a> ."</p>
 
         <h2>Leitura adicional</h2>
         <hr>
         <ul>
-            <li>" Sobre autenticação para GitHub "</li>
-            <li>" Expiração e revogação de token "</li>
+            <li>" <a href="https://docs.github.com/en/github/authenticating-to-github/about-authentication-to-github">Sobre autenticação para GitHub</a> "</li>
+            <li>" <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/token-expiration-and-revocation">Expiração e revogação de token</a> "</li>
         </ul>
     </div>
 </body>
